@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN Orthopedic Car Neck Rest Pillow | URBANKART</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --orange-glow: #ff7730;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, var(--primary), var(--dark));
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .countdown-timer {
+            background: var(--secondary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Admin Access Link */
+        .admin-access {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .admin-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--light);
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .admin-link:hover {
+            background: var(--accent);
+            color: white;
+        }
+        
+        /* Product Section */
+        .product-section {
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            overflow-x: auto;
+        }
+        
+        .thumbnails img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .thumbnails img:hover {
+            border-color: var(--accent);
+        }
+        
+        .product-details {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .product-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+        
+        .stars {
+            color: #f39c12;
+        }
+        
+        .price-container {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .mrp {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 20px;
+        }
+        
+        .deal-price {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin: 5px 0;
+        }
+        
+        .discount {
+            background: var(--success);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        
+        /* Enhanced Buy Now Button with FOMO Timer */
+        .buy-now-container {
+            position: relative;
+            margin: 25px 0;
+        }
+        
+        .buy-now-btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(145deg, #e74c3c, #c0392b);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 22px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: all 0.8s ease;
+            box-shadow: 0 0 20px rgba(255, 119, 48, 0.7);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            z-index: 2;
+            animation: slow-hover 4s infinite alternate;
+        }
+        
+        @keyframes slow-hover {
+            0% {
+                transform: translateY(0) scale(1);
+                box-shadow: 0 0 20px rgba(255, 119, 48, 0.7);
+            }
+            50% {
+                transform: translateY(-5px) scale(1.03);
+                box-shadow: 0 5px 30px rgba(255, 119, 48, 0.9), 0 10px 40px rgba(255, 119, 48, 0.6);
+            }
+            100% {
+                transform: translateY(0) scale(1);
+                box-shadow: 0 0 20px rgba(255, 119, 48, 0.7);
+            }
+        }
+        
+        .buy-now-btn:hover {
+            background: linear-gradient(145deg, #c0392b, #e74c3c);
+            transform: translateY(-7px) scale(1.05);
+            box-shadow: 0 8px 35px rgba(255, 119, 48, 0.9), 0 15px 50px rgba(255, 119, 48, 0.7);
+            letter-spacing: 1.5px;
+            animation: none;
+        }
+        
+        .buy-now-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 5px 15px rgba(255, 119, 48, 0.7);
+        }
+        
+        .button-timer {
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+            font-weight: 600;
+            color: #e74c3c;
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .urgency-text {
+            color: #e74c3c;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .features {
+            margin: 20px 0;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-list li i {
+            color: var(--success);
+        }
+        
+        /* Live Orders */
+        .live-orders {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .live-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light);
+        }
+        
+        .order-count {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--secondary);
+            animation: countAnimation 3s infinite;
+        }
+        
+        @keyframes countAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .orders-container {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .order-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            animation: fadeIn 1s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Order Form */
+        .order-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: none;
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .payment-option {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+            border: 2px dashed var(--success);
+        }
+        
+        .payment-option label {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--success);
+            cursor: pointer;
+        }
+        
+        .confirm-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: var(--success);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .confirm-btn:hover {
+            background: #219653;
+        }
+        
+        /* Success Message */
+        .order-success {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            display: none;
+        }
+        
+        .success-icon {
+            font-size: 60px;
+            color: var(--success);
+            margin-bottom: 20px;
+        }
+        
+        /* Admin Section */
+        .admin-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: none;
+        }
+        
+        .admin-login {
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .admin-table th,
+        .admin-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .admin-table th {
+            background: var(--light);
+        }
+        
+        .status-btn {
+            padding: 6px 12px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* WhatsApp Chat */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            z-index: 100;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-chat:hover {
+            transform: scale(1.1);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://i.ibb.co/XxZqVwkY/Screenshot-1-removebg-preview.png" alt="URBANKART Logo">
+                <h1>URBANKART</h1>
+            </div>
+            <div class="countdown-timer">
+                <i class="fas fa-bolt"></i> Offer ends in: <span id="countdown">05:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="product-image">
+                <img src="https://i.ibb.co/PswVBWkD/3.png" alt="URBAN Orthopedic Car Neck Rest Pillow" id="main-image">
+                <div class="thumbnails">
+                    <img src="https://i.ibb.co/PswVBWkD/3.png" alt="Thumbnail 1" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/2YNBq9V5/2.png" alt="Thumbnail 2" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/JW5SXpZ3/3.png" alt="Thumbnail 3" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/xqnYxxCv/4.png" alt="Thumbnail 4" onclick="changeImage(this)">
+                    <img src="https://i.ibb.co/1f5LZyMy/5.png" alt="Thumbnail 5" onclick="changeImage(this)">
+                </div>
+            </div>
+            
+            <div class="product-details">
+                <h1 class="product-title">URBAN Orthopedic Car Neck Rest Pillow - Superior Neck Support Cushion</h1>
+                
+                <div class="rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>4.8/5 (1892 reviews)</span>
+                </div>
+                
+                <div class="price-container">
+                    <div class="mrp">MRP: ₹2499</div>
+                    <div class="deal-price">DEAL PRICE: ₹999</div>
+                    <div class="discount">60% OFF</div>
+                </div>
+                
+                <div class="buy-now-container">
+                    <button class="buy-now-btn" id="buy-now-btn" onclick="showOrderForm()">
+                        <i class="fas fa-shopping-cart"></i> BUY NOW
+                    </button>
+                    <div class="button-timer" id="button-timer">Hurry! Offer expires in: 05:00</div>
+                    <div class="urgency-text">⏱️ Limited time offer! Prices go back up soon!</div>
+                </div>
+                
+                <div class="features">
+                    <h3>Product Features:</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> X-Large ergonomic design for superior support</li>
+                        <li><i class="fas fa-check-circle"></i> Universal fit for most car seats and office chairs</li>
+                        <li><i class="fas fa-check-circle"></i> 100% high-quality memory foam</li>
+                        <li><i class="fas fa-check-circle"></i> Naturally improves posture</li>
+                        <li><i class="fas fa-check-circle"></i> Adjustable elastic strap for custom fit</li>
+                        <li><i class="fas fa-check-circle"></i> Soft & washable cover</li>
+                        <li><i class="fas fa-check-circle"></i> Ideal for long-term use in multiple scenarios</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Live Orders Section -->
+        <section class="live-orders">
+            <div class="live-header">
+                <h2><i class="fas fa-fire"></i> LIVE ORDERS</h2>
+                <div class="order-count">Orders: <span id="order-count">102547</span>+</div>
+            </div>
+            <div class="orders-container" id="orders-container">
+                <!-- Orders will be populated by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Order Form Section -->
+        <section class="order-form" id="order-form">
+            <h2 class="form-title">Place Your Order</h2>
+            <form id="order-details-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" rows="3" required placeholder="Enter your complete address"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="landmark">Landmark</label>
+                    <input type="text" id="landmark" required placeholder="Enter a nearby landmark">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" required placeholder="Enter your 10-digit mobile number">
+                </div>
+                
+                <div class="payment-option">
+                    <input type="radio" id="cod" name="payment" value="cod" checked>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+                
+                <button type="button" class="confirm-btn" onclick="placeOrder()">Confirm Order</button>
+            </form>
+        </section>
+        
+        <!-- Order Success Section -->
+        <section class="order-success" id="order-success">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your order number is: <strong id="order-number"></strong></p>
+            <p>We'll deliver your product within 5-7 business days.</p>
+            <p>For any queries, WhatsApp us at: <strong>8088659806</strong></p>
+        </section>
+        
+        <!-- Admin Access Link at Bottom -->
+        <div class="admin-access">
+            <a class="admin-link" onclick="showAdminSection()">
+                <i class="fas fa-lock"></i> Admin Access
+            </a>
+        </div>
+        
+        <!-- Admin Section -->
+        <section class="admin-section" id="admin-section">
+            <div id="admin-login" class="admin-login">
+                <h2>Admin Login</h2>
+                <div class="form-group">
+                    <label for="admin-username">Username</label>
+                    <input type="text" id="admin-username" placeholder="Enter admin username">
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Password</label>
+                    <input type="password" id="admin-password" placeholder="Enter admin password">
+                </div>
+                <button class="confirm-btn" onclick="adminLogin()">Login</button>
+            </div>
+            
+            <div id="admin-panel" style="display: none;">
+                <h2>Admin Panel</h2>
+                <div class="sales-summary">
+                    <h3>Total Sales: ₹<span id="total-sales">0</span></h3>
+                    <p>Total Orders: <span id="total-orders">0</span></p>
+                    <button class="status-btn" onclick="clearAllOrders()" style="background: var(--secondary); margin-top: 10px;">Clear All Orders</button>
+                </div>
+                
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Mobile</th>
+                            <th>Address</th>
+                            <th>Landmark</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-table">
+                        <!-- Orders will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    
+    <!-- WhatsApp Chat -->
+    <a href="https://wa.me/message/EZG4ZBTGIN66F1" class="whatsapp-chat" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 URBANKART. All rights reserved.</p>
+            <p>Need help? WhatsApp us at 8088659806</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize localStorage for orders if not exists
+        if (!localStorage.getItem('orders')) {
+            localStorage.setItem('orders', JSON.stringify([]));
+        }
+        
+        // Countdown Timer
+        let countdownTime = 5 * 60; // 5 minutes in seconds
+        
+        function updateCountdown() {
+            const minutes = Math.floor(countdownTime / 60);
+            const seconds = countdownTime % 60;
+            
+            document.getElementById('countdown').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (countdownTime > 0) {
+                countdownTime--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                document.querySelector('.countdown-timer').innerHTML = 
+                    '<i class="fas fa-times"></i> Offer has expired';
+                document.querySelector('.countdown-timer').style.background = '#7f8c8d';
+            }
+        }
+        
+        updateCountdown();
+        
+        // Button timer functionality - FOMO effect only
+        let buttonTimer = 5 * 60; // 5 minutes in seconds
+        let buttonTimerInterval;
+        
+        function startButtonTimer() {
+            const buttonTimerElement = document.getElementById('button-timer');
+            
+            buttonTimerInterval = setInterval(() => {
+                const minutes = Math.floor(buttonTimer / 60);
+                const seconds = buttonTimer % 60;
+                
+                buttonTimerElement.textContent = `Hurry! Offer expires in: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (buttonTimer > 0) {
+                    buttonTimer--;
+                } else {
+                    clearInterval(buttonTimerInterval);
+                    buttonTimerElement.textContent = 'Offer expired!';
+                    buttonTimerElement.style.color = '#7f8c8d';
+                    buttonTimer = 5 * 60; // Reset timer
+                }
+            }, 1000);
+        }
+        
+        // Start the FOMO timer when page loads
+        window.onload = function() {
+            startButtonTimer();
+        };
+        
+        // Change product image
+        function changeImage(element) {
+            document.getElementById('main-image').src = element.src;
+        }
+        
+        // Show admin section
+        function showAdminSection() {
+            document.getElementById('admin-section').style.display = 'block';
+            window.scrollTo({
+                top: document.getElementById('admin-section').offsetTop - 20,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Live order count
+        let orderCount = 102547;
+        
+        function updateOrderCount() {
+            orderCount += 39;
+            document.getElementById('order-count').textContent = orderCount;
+        }
+        
+        setInterval(updateOrderCount, 3000);
+        
+        // Indian names and states for live orders
+        const indianNames = [
+            "Anish", "Manish", "Rahul", "Priya", "Amit", "Sneha", "Raj", "Kavita", 
+            "Vikram", "Neha", "Sanjay", "Pooja", "Arun", "Divya", "Rohit", "Anjali",
+            "Nikhil", "Swati", "Karan", "Shweta", "Vivek", "Meera", "Alok", "Sunita"
+        ];
+        
+        const indianStates = [
+            "Karnataka", "Bihar", "Maharashtra", "Tamil Nadu", "Uttar Pradesh",
+            "West Bengal", "Gujarat", "Rajasthan", "Kerala", "Punjab", "Haryana",
+            "Madhya Pradesh", "Andhra Pradesh", "Telangana", "Odisha", "Assam"
+        ];
+        
+        // Generate random live orders
+        function generateLiveOrder() {
+            const name = indianNames[Math.floor(Math.random() * indianNames.length)];
+            const state = indianStates[Math.floor(Math.random() * indianStates.length)];
+            
+            return `${name} ordered from ${state}`;
+        }
+        
+        // Display live orders
+        function displayLiveOrders() {
+            const ordersContainer = document.getElementById('orders-container');
+            const orderItem = document.createElement('div');
+            orderItem.className = 'order-item';
+            orderItem.textContent = generateLiveOrder();
+            
+            ordersContainer.prepend(orderItem);
+            
+            // Remove oldest order if more than 10
+            if (ordersContainer.children.length > 10) {
+                ordersContainer.removeChild(ordersContainer.lastChild);
+            }
+        }
+        
+        // Initial orders
+        for (let i = 0; i < 5; i++) {
+            displayLiveOrders();
+        }
+        
+        // Add new order every few seconds
+        setInterval(displayLiveOrders, 5000);
+        
+        // Show order form
+        function showOrderForm() {
+            document.getElementById('order-form').style.display = 'block';
+            window.scrollTo({
+                top: document.getElementById('order-form').offsetTop - 20,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Place order
+        function placeOrder() {
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const landmark = document.getElementById('landmark').value;
+            const mobile = document.getElementById('mobile').value;
+            
+            if (!name || !address || !landmark || !mobile) {
+                alert('Please fill all the fields');
+                return;
+            }
+            
+            if (mobile.length !== 10 || isNaN(mobile)) {
+                alert('Please enter a valid 10-digit mobile number');
+                return;
+            }
+            
+            // Generate order number (timestamp-based)
+            const orderNumber = 'URB' + Date.now().toString().slice(-8);
+            document.getElementById('order-number').textContent = orderNumber;
+            
+            // Hide form and show success
+            document.getElementById('order-form').style.display = 'none';
+            document.getElementById('order-success').style.display = 'block';
+            
+            // Scroll to success message
+            window.scrollTo({
+                top: document.getElementById('order-success').offsetTop - 20,
+                behavior: 'smooth'
+            });
+            
+            // Save order to localStorage
+            const orders = JSON.parse(localStorage.getItem('orders') || '[]');
+            const newOrder = {
+                id: orderNumber,
+                name,
+                address,
+                landmark,
+                mobile,
+                status: 'pending',
+                date: new Date().toLocaleString()
+            };
+            orders.push(newOrder);
+            localStorage.setItem('orders', JSON.stringify(orders));
+            
+            // Update admin panel if visible
+            if (document.getElementById('admin-panel').style.display === 'block') {
+                loadOrdersToAdmin();
+            }
+            
+            // Reset form
+            document.getElementById('order-details-form').reset();
+        }
+        
+        // Admin login
+        function adminLogin() {
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+            
+            if (username === 'urbankart1523' && password === 'Bqqpa6781f@') {
+                document.getElementById('admin-login').style.display = 'none';
+                document.getElementById('admin-panel').style.display = 'block';
+                loadOrdersToAdmin();
+            } else {
+                alert('Incorrect username or password');
+            }
+        }
+        
+        // Load orders to admin panel
+        function loadOrdersToAdmin() {
+            const orders = JSON.parse(localStorage.getItem('orders') || '[]');
+            const tableBody = document.getElementById('orders-table');
+            const totalSalesElement = document.getElementById('total-sales');
+            const totalOrdersElement = document.getElementById('total-orders');
+            
+            // Clear table
+            tableBody.innerHTML = '';
+            
+            // Calculate total sales and orders
+            const totalOrders = orders.length;
+            const totalSales = totalOrders * 999;
+            
+            totalOrdersElement.textContent = totalOrders;
+            totalSalesElement.textContent = totalSales.toLocaleString();
+            
+            // Add orders to table
+            orders.forEach(order => {
+                const row = document.createElement('tr');
+                
+                row.innerHTML = `
+                    <td>${order.id}</td>
+                    <td>${order.name}</td>
+                    <td>${order.mobile}</td>
+                    <td>${order.address}</td>
+                    <td>${order.landmark}</td>
+                    <td>${order.status}</td>
+                    <td>${order.date}</td>
+                    <td>
+                        ${order.status === 'pending' ? 
+                            `<button class="status-btn" onclick="markAsSold('${order.id}')">Mark as Sold</button>` : 
+                            'Completed'}
+                    </td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+        
+        // Mark order as sold
+        function markAsSold(orderId) {
+            const orders = JSON.parse(localStorage.getItem('orders') || '[]');
+            const orderIndex = orders.findIndex(order => order.id === orderId);
+            
+            if (orderIndex !== -1) {
+                orders[orderIndex].status = 'sold';
+                localStorage.setItem('orders', JSON.stringify(orders));
+                loadOrdersToAdmin();
+            }
+        }
+        
+        // Clear all orders
+        function clearAllOrders() {
+            if (confirm('Are you sure you want to clear all orders? This action cannot be undone.')) {
+                localStorage.setItem('orders', JSON.stringify([]));
+                loadOrdersToAdmin();
+            }
+        }
+        
+        // Auto-refresh admin panel every 10 seconds if it's visible
+        setInterval(() => {
+            if (document.getElementById('admin-panel').style.display === 'block') {
+                loadOrdersToAdmin();
+            }
+        }, 10000);
+    </script>
+</body>
+</html>
